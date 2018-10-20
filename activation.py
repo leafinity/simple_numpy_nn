@@ -44,7 +44,6 @@ def relu_backward(dA, Z):
         dA: current layer's output
         Z: output before activ_func
     '''
-
     dZ = np.array(dA, copy=True)
     dZ[Z <= 0] = 0
     
